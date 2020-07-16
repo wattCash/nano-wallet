@@ -3,22 +3,22 @@ export function initialState () {
     // SETTINGS CAN BE CHANGED
     settings: {
       pow: 1,
-      changeaddress: true,
+      changeaddress: false,
       checkbackends: true,
       followlinks: true,
       receiveinterval: 10000,
       nfctoken: process.env.VUE_APP_NFC_TOKEN,
       node: [
         {
-          address: 'nano.linuxserver.io',
+          address: 'wallet.watt.cash',
           protocol: 'http',
           port: 7076,
           path: '',
         },
 	{
-          address: 'nano2.linuxserver.io',
-          protocol: 'http',
-          port: 7076,
+          address: 'account.watt.cash',
+          protocol: 'https',
+          port: 443,
           path: '',
         }
       ],
