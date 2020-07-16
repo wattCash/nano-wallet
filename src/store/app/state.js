@@ -10,7 +10,7 @@ export function initialState () {
       nfctoken: process.env.VUE_APP_NFC_TOKEN,
       node: [
         {
-          address: 'wallet.watt.cash',
+          address: 'watt.cash',
           protocol: 'http',
           port: 7076,
           path: '',
